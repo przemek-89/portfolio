@@ -1,0 +1,22 @@
+.header {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    padding: 18px 0;
+  }
+
+  &__logo {
+    text-indent: -99999px;
+    width: 133px;
+    height: 38px;
+    background: image_url('logo.svg') no-repeat 0 0;
+    background-size: contain;
+    @include smMin {
+      width: 154px;
+      height: 44px;
+    }
+  }
+}
